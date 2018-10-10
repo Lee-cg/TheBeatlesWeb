@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright
+   w3sschools에서 밴드 템플릿을 참조하여 만들었습니다.-->
+
+
+  <title>The Beatles - 아이돌 밴드에서 뮤지션까지</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> <!--Lato 글꼴 CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"> <!-- Montserrat 글꼴 CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!-- Jquery CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap CDN -->
+
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+  });  // 팝오버를 위한 자바스크립트 코드
+  </script>
+
+
+
+  <style>
+
+  /*기본 글꼴 설정*/
+
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 30px;
+      color: black;
+
+  /*기본 CSS 설정*/
+
+  }
+  .container {
+      padding: 80px 80px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img { /* 슬라이드 이미지 설정*/
+      -webkit-filter: grayscale(30%);
+      filter: grayscale(30%); /* make all photos black and white */  /*필터 30% 어둡기 설정*/
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #fbbd1e;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 5px;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {                      /*버튼 CSS*/
+      padding: 10px 20px;
+      background-color: #05437e;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #05437e;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #05437e;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {     /*앨범 트랙 창 CSS*/
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+
+  .navbar {                        /*메뉴바 CSS*/
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #fbbd1e;  /*fbbd1e은 노란색*/
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+
+  .navbar li a, .navbar .navbar-brand {
+      color: black !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #777 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #fbbd1e;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+
+  #mouseH { font-size : 45px };
+
+  }
+  </style>
+</head>
+
+
+    <!-- body 시작 -->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">   <!-- 메뉴바 부분-->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#myPage">THE BEATLES</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">BAND MEMBER</a></li>
+        <li><a href="#tour">ALUBMS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
+
+<!--Carousel(슬라이드 이미지)-->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">      <!-- 첫번째 슬라이드 -->
+      <div class="item active">
+        <img src="./img/beatlesBack.jpg" alt="beatlesBack" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>With the Beatles!!!</h3>
+          <p>Come to 1962-1970!!</p>
+        </div>
+      </div>
+
+      <div class="item">      <!-- 두번째 슬라이드 -->
+        <img src=".\img\sgtBack.jpg" alt="sgtBack" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Born in Livepool</h3>
+          <p>We hope you will enjoy the show.</p>
+        </div>
+      </div>
+
+      <div class="item">      <!-- 세번째 쓸라이드 -->
+        <img src=".\img\yelloBack.jpg" alt="yelloBack" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>The Beatles Official Site</h3>
+          <p>https://www.thebeatles.com/</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 왼쪽 오른쪽 슬라이드 버튼 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!-- 멤버 소개 박스 -->
+<div id="band" class="container text-center">
+  <h3>THE BEATLES</h3>
+  <p><strong>비틀즈(The Beatles)</strong>는 1960년 리버풀에서 결성된 영국의 록 밴드다. <br>
+    존 레논, 폴 매카트니, 조지 해리슨, 링고 스타로 구성된 이 밴드는 록의 시대에서 최선두 주자이자 가장 영향력 있는 밴드로 널리 인정받고 있다.<br>
+    스키플, 비트 음악과 1950년대 로큰롤에 뿌리를 둔 비틀즈는 이후 팝 발라드와 인도 음악에서 사이키델릭과 하드 록까지 그 범위를 확장시키면서 여러 음악 스타일을 실험했고, 종종 혁명적인 방식으로 클래식적인 요소와 관습에서 벗어난 녹음 기술을 결합하기도 했다.<br>
+    1963년 이들의 어마어마한 유명세는 "비틀마니아"로 첫 표출되었으나, 그룹의 음악이 향후의 수년에 걸쳐 주된 작곡가인 레논과 폴 매카트니를 구심점으로 세련되게 성장하면서, 이들은 1960년대 반문화가 내세운 사상의 결정체적 존재로 간주되었다. 출처 : 위키백과</p>
+  <br>
+  <div class="row">
+
+    <!-- 존 레논 -->
+    <div class="col-sm-3">
+      <p class="text-center"><strong>John Lennon</strong></p><br>
+      <img src=".\team/john.jpg" class="img-rounded" alt="Random Name" width="150" height="150">
+      <div id="demo" class="">
+      <a href="#" title="John Lennon (1940 - 1980)" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="존 윈스턴 오노 레논(John Winston Ono Lennon 존 윈스턴 오노 레넌, MBE, 1940년 10월 9일 ~ 1980년 12월 8일) 또는 출생명인 존 윈스턴 레논(John Winston Lennon 존 윈스턴 레넌)은 영국의 싱어송라이터이자 대중음악 사상 가장 성공했으며 또한 가장 영향력 있는 밴드인 비틀즈의 창립 멤버다.
+         그는 동료 폴 매카트니와 함께 가장 위대한 파트너십 중 하나로 간주되는 작곡 파트너십을 맺었다.">John More!!</a>
+      </div>
+    </div>
+
+    <!-- 폴 매카트니 -->
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Paul McCarteny</strong></p><br>
+        <img src="./team/paul.jpg" class="img-rounded" alt="Random Name" width="150" height="150">  </a>
+      <div id="demo2" class="">
+        <a href="#" title="Paul McCarteny (1942 ~)" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="폴 매카트니 경(Sir Paul McCartney, CH, MBE, 1942년 6월 18일 ~ )은 비틀즈와 윙스의 전 멤버로 가장 잘 알려진 영국의 싱어송라이터, 시인, 작곡가, 멀티플레이어, 사업가, 녹음 프로듀서, 영화 프로듀서, 화가, 그리고 동물 권리와 평화 운동가이다. 존 레논, 조지 해리슨, 링고 스타와 함께 결성한 비틀즈의 멤버로서 국제적인 명성을 떨친 그는 동료 레논과 함께 가장 혁신적이고 성공적인 파트너십으로 간주되는 작곡 파트너십을 맺었으며, 록 음악사에서 가장 유명한 곡들을 여럿 작곡했다.
+        비틀즈 탈퇴 이후로는 성공적인 솔로 활동을 개시하였고 자신의 첫 아내 린다 이스트먼과 싱어송라이터 데니 레인과 짝을 지어 밴드 윙스를 결성했다.
+        영화 음악, 클래식, 전자 음악까지 손길을 뻗었으며 또한 솔로 시기 수많은 곡들을 발표했다. 또한 국제적인 자선 단체를 지원하는 프로젝트에 참여하고 있다.">Paul More!!</a>
+        </div>
+      </div>
+
+
+    <!-- 조지 해리슨 -->
+    <div class="col-sm-3">
+      <p class="text-center"><strong>George Harrison</strong></p><br>
+
+        <img src=".\team/harrison.jpg" class="img-rounded" alt="Random Name" width="150" height="150">  </a>
+      <div id="demo3" class="">
+        <a href="#" title="George Harrison (1943 - 2001)" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="조지 해리슨(George Harrison, MBE, 1943년 2월 25일 ~ 2001년 11월 29일)은 영국의 기타 연주자, 싱어송라이터, 그리고 음악 및 영화 프로듀서다. 해리슨은 비틀즈의 리드 기타 연주자로서 국제적인 명성을 얻었다.
+        종종 "조용한 비틀"이라고도 불리는 해리슨은 힌두교 신화를 받아들였고, 인도 악기를 자신의 음악에 접목하여 동료 비틀즈와 서구권 청자의 시야를 넓히는데 이바지했다.
+        비틀즈의 노래 대부분은 레논-매카트니가 작곡했으나, 1965년 이후로 대부분의 비틀즈 음반에는 적어도 2개의 해리슨 노래가 수록되어 있다. 그의 노래에는 〈Taxman〉, 〈You Without You Without You〉, 〈My Guitar Gently Weeps〉, 〈Here Comes the Sun〉, 〈Something〉 등이 있으며, 마지막 곡은 비틀즈의 노래 중에서 두 번째로 가장 많이 커버된 노래가 되었다.
+        ">George More!!</a>
+        </div>
+      </div>
+
+
+    <!-- 링고 스타 -->
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Ringo Starr</strong></p><br>
+
+        <img src=".\team/ringo.jpg" class="img-rounded" alt="Random Name" width="150" height="150"> </a>
+      <div id="demo2" class="">
+        <a href="#" title="Ringo Starr (1940 ~)" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="리처드 스타키 경(Sir Richard Starkey, MBE, 1940년 7월 7일 ~ )은 링고 스타(Ringo Starr)로 알려진 영국의 드러머, 가수, 작곡가, 배우다. 비틀즈의 드러머로 활동해 세계적인 유명세를 획득했다.
+        대개 한 음반의 한 곡에서 리드 보컬로 참여했고, 그중에는 〈With a Little Help from My Friends〉, 〈Yellow Submarine〉, 〈Good Night〉, 그들이 커버한 〈Act Naturally〉 등이 있다. 비틀즈 노래 〈Don't Pass Me By〉, 〈Octopus's Garden〉를 썼고, 〈What Goes On〉과 〈Flying〉 등에서는 공동 작곡가로 기록되었다.
+        ">Ringo More!!</a>
+        </div>
+      </div>
+
+  </div>
+  <div id="mouseH">
+    마우스를 올려보세요!!
+  </div>
+</div>
+
+<!-- 앨범 소개 박스 -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">The beatles Albums</h3>
+    <p class="text-center">Studio Albums
+
+    <div class="row text-center">
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/3/3c/%EB%B9%84%ED%8B%80%EC%A6%88_-_Please_Please_Me.jpg/220px-%EB%B9%84%ED%8B%80%EC%A6%88_-_Please_Please_Me.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Please Please Me</strong></p>
+          <p>1963</p>
+          <button class="btn" data-toggle="modal" data-target="#1Please">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Withthebeatlescover.jpg/220px-Withthebeatlescover.jpg" alt="Paris" width="400" height="300">
+          <p><strong>With the Beatles</strong></p>
+          <p>1963</p>
+          <button class="btn" data-toggle="modal" data-target="#2With">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/HardDayUK.jpg" alt="Paris" width="400" height="300">
+          <p><strong>A Hard Day's night</strong></p>
+          <p>1964</p>
+          <button class="btn" data-toggle="modal" data-target="#3Ahard">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Beatlesforsale.jpg/220px-Beatlesforsale.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Beatles for Sale</strong></p>
+          <p>1964</p>
+          <button class="btn" data-toggle="modal" data-target="#4For">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Help%21_%28The_Beatles_album_-_cover_art%29.jpg/220px-Help%21_%28The_Beatles_album_-_cover_art%29.jpg" alt="Paris" width="400" height="300">
+          <br>
+          <p><strong>Help!</strong></p>
+          <p>1965</p>
+          <button class="btn" data-toggle="modal" data-target="#5Help">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Rubber_Soul.jpg/220px-Rubber_Soul.jpg" alt="Paris" width="400" height="300">
+          <br>
+          <p><strong>Rubber Soul</strong></p>
+          <p>1965</p>
+          <button class="btn" data-toggle="modal" data-target="#6Rubber">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Revolver.jpg/220px-Revolver.jpg" alt="Paris" width="400" height="300">
+          <br>
+          <p><strong>Revolver</strong></p>
+          <p>1966</p>
+          <button class="btn" data-toggle="modal" data-target="#7Revolver">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg/220px-Sgt._Pepper%27s_Lonely_Hearts_Club_Band.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Sgt. Pepper Lonely Hearts Club Band</strong></p>
+          <p>1967</p>
+          <button class="btn" data-toggle="modal" data-target="#8Sgt">Songs</button>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/d/d1/%EB%B9%84%ED%8B%80%EC%A6%88_-_Magical_Mystery_Tour.jpg/220px-%EB%B9%84%ED%8B%80%EC%A6%88_-_Magical_Mystery_Tour.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Magical Mystery Tour</strong></p>
+          <p>1967</p>
+          <button class="btn" data-toggle="modal" data-target="#9Magical">Songs</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/TheBeatles68LP.jpg/220px-TheBeatles68LP.jpgg" alt="Paris" width="400" height="300">
+          <p><strong>The Beatles(White Album)</strong></p>
+          <p>1968</p>
+          <button class="btn" data-toggle="modal" data-target="#10White">Songs</button>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/TheBeatles-YellowSubmarinealbumcover.jpg/220px-TheBeatles-YellowSubmarinealbumcover.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Yellow Submarine</strong></p>
+          <p>1968</p>
+          <button class="btn" data-toggle="modal" data-target="#11Yellow">Songs</button>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Beatles_-_Abbey_Road.jpg/220px-Beatles_-_Abbey_Road.jpg" alt="New York" width="400" height="300">
+          <p><strong>Abbey Road</strong></p>
+          <p>1969</p>
+          <button class="btn" data-toggle="modal" data-target="#12Abbey">Songs</button>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="thumbnail">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/LetItBe.jpg/220px-LetItBe.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Let it be</strong></p>
+          <p>1970</p>
+          <button class="btn" data-toggle="modal" data-target="#13Let">Songs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 앨범 자세한 트랙 -->
+  <div class="modal fade" id="1Please" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Please Please Me-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </span> Please Please Me</h4>
+        </div>
+        <div class="modal-body">
+          <p>사이드 1 <br>
+1.	〈I Saw Her Standing There〉  	폴 매카트니	2:54<br>
+2.	〈Misery〉  	존 레논, 폴 매카트니	1:49<br>
+3.	〈Anna (Go to Him)〉 (아서 알렉산더)	존 레논	2:57<br>
+4.	〈Chains〉 (게리 고핀/캐롤 킹)	조지 해리슨	2:26<br>
+5.	〈Boys〉 (루서 딕슨/웨스 파렐)	링고 스타	2:27<br>
+6.	〈Ask Me Why〉  	존 레논	2:26<br>
+7.	〈Please Please Me〉  	존 레논, 폴 매카트니	2:03<br><br>
+사이드 2<br>
+1.	〈Love Me Do〉  	폴 매카트니, 존 레논	2:23<br>
+2.	〈P.S. I Love You〉  	폴 매카트니	2:04<br>
+3.	〈Baby It's You〉 (맥 데이비드/버니 윌리엄스/버트 바카락)	존 레논	2:40<br>
+4.	〈Do You Want to Know a Secret〉  	조지 해리슨	1:59<br>
+5.	〈A Taste of Honey〉 (바비 스콧/릭 마로우)	폴 매카트니	2:03<br>
+6.	〈There's a Place〉  	존 레논, 폴 매카트니	1:51<br>
+7.	〈Twist and Shout〉 (필 메들리/버트 러셀)	존 레논	2:37</p>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- With the Beatles -->
+<div class="modal fade" id="2With" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span> With the Beatles</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	〈It Won't Be Long〉  	레논	2:13 <br>
+2.	〈All I've Got to Do〉  	레논	2:03<br>
+3.	〈All My Loving〉  	매카트니	2:08<br>
+4.	〈Don't Bother Me〉 (조지 해리슨)	해리슨	2:28<br>
+5.	〈Little Child〉  	레논, 매카트니	1:46<br>
+6.	〈Till There Was You〉 (메러디스 윌슨)	매카트니	2:14<br>
+7.	〈Please Mister Postman〉 (조지아 더빈스/윌리엄 게럿/프레미 고먼/브라이언 홀랜드/로버트 배트맨)	레논	2:34<br><br>
+사이드 2<br>
+1.	〈Roll Over Beethoven〉 (척 베리)	해리슨	2:45<br>
+2.	〈Hold Me Tight〉  	매카트니	2:32<br>
+3.	〈You Really Got a Hold on Me〉 (스모키 로빈슨)	레논, 해리슨	3:01<br>
+4.	〈I Wanna Be Your Man〉  	스타	2:00<br>
+5.	〈Devil in Her Heart〉 (리처드 드랩킨)	해리슨	2:26<br>
+6.	〈Not a Second Time〉  	레논	2:07<br>
+7.	〈Money (That's What I Want)〉 (제니 브래드퍼드/베리 고디)	레논	2:50</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- A hard day's night -->
+<div class="modal fade" id="3Ahard" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span> A Hard Day's Night</h4>
+      </div>
+      <div class="modal-body">
+        <p>1면<br>
+1.	〈A Hard Day's Night〉  	레논, 매카트니	2:34 <br>
+2.	〈I Should Have Known Better〉  	레논	2:43 <br>
+3.	〈If I Fell〉  	레논, 매카트니	2:19 <br>
+4.	〈I'm Happy Just to Dance with You〉  	해리슨	1:56 <br>
+5.	〈And I Love Her〉  	매카트니	2:30 <br>
+6.	〈Tell Me Why〉  	레논, 매카트니, 해리슨	2:09 <br>
+7.	〈Can't Buy Me Love〉  	매카트니	2:12 <br><br>
+2면 <br>
+1.	〈Any Time at All〉  	레논, 매카트니	2:11 <br>
+2.	〈I'll Cry Instead〉  	레논	1:46 <br>
+3.	〈Things We Said Today〉  	매카트니, 해리슨	2:35 <br>
+4.	〈When I Get Home〉  	레논	2:17 <br>
+5.	〈You Can't Do That〉  	레논, 매카트니, 해리슨	2:35 <br>
+6.	〈I'll Be Back〉  	레논, 매카트니, 해리슨	2:24</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Beatles for Sale -->
+<div class="modal fade" id="4For" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Beatles For Sale</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	〈No Reply〉  	레논	2:15<br>
+2.	〈I'm a Loser〉  	레논	2:31<br>
+3.	〈Baby's in Black〉  	레논,매카트니	2:02<br>
+4.	〈Rock and Roll Music〉 (척 베리)	레논	2:32<br>
+5.	〈I'll Follow the Sun〉  	매카트니	1:46<br>
+6.	〈Mr. Moonlight〉 (로이 리 존슨)	레논	2:33<br>
+7.	〈Kansas City/Hey-Hey-Hey-Hey!〉 (제리 리버와 마이크 스톨러/리틀 리처드)	매카트니	2:33<br><br>
+사이드 2<br>
+1.	〈Eight Days a Week〉  	레논, 매카트니	2:44<br>
+2.	〈Words of Love〉 (버디 홀리)	레논, 매카트니	2:12<br>
+3.	〈Honey Don't〉 (칼 퍼킨스)	스타	2:55<br>
+4.	〈Every Little Thing〉  	레논, 매카트니	2:01<br>
+5.	〈I Don't Want to Spoil the Party〉  	레논, 매카트니	2:33<br>
+6.	〈What You're Doing〉  	매카트니	2:30<br>
+7.	〈Everybody's Trying to Be My Baby〉 (퍼킨스)	해리슨	2:23</p><br>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Help! -->
+<div class="modal fade" id="5Help" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Help!</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Help!  	레논	2:18 <br>
+2.	The Night Before  	매카트니	2:33<br>
+3.	You've Got to Hide Your Love Away  	레논	2:08<br>
+4.	I Need You (조지 해리슨)	해리슨	2:28<br>
+5.	Another Girl  	매카트니	2:05<br>
+6.	You're Going to Lose That Girl  	레논	2:17<br>
+7.	Ticket to Ride  	레논	3:10<br><br>
+사이드 2<br>
+1.	Act Naturally (조니 러셀/보니 모리슨)	스타,매카트니	2:29<br>
+2.	It's Only Love  	레논	1:54<br>
+3.	You Like Me Too Much (해리슨)	해리슨	2:35<br>
+4.	Tell Me What You See  	레논,매카트니	2:36<br>
+5.	I've Just Seen a Face  	매카트니	2:04<br>
+6.	Yesterday  	매카트니	2:03<br>
+7.	Dizzy Miss Lizzy (래리 윌리엄스)	레논	2:53</p><br>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Ruber Soul-->
+<div class="modal fade" id="6Rubber" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Rubber Soul</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Drive My Car  	매카트니,레논	2:25 <br>
+2.	Norwegian Wood (This Bird Has Flown)  	레논	2:01<br>
+3.	You Won't See Me  	매카트니	3:18<br>
+4.	Nowhere Man  	레논,매카트니,해리슨	2:40<br>
+5.	Think for Yourself (조지 해리슨)	해리슨	2:16<br>
+6.	The Word  	레논,매카트니,해리슨	2:41<br>
+7.	Michelle  	매카트니	2:40<br><br>
+사이드 2<br>
+1.	What Goes On (존 레논/폴 매카트니/링고 스타)	스타	2:47<br>
+2.	Girl  	레논	2:30<br>
+3.	I'm Looking Through You  	매카트니	2:23<br>
+4.	In My Life  	레논,매카트니	2:24<br>
+5.	Wait  	레논,매카트니	2:12<br>
+6.	If I Needed Someone (해리슨)	해리슨	2:20<br><br>
+7.	Run for Your Life  	레논	2:18<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Revolver -->
+<div class="modal fade" id="7Revolver" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Revolver</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Taxman (해리슨)	해리슨	2:39 <br>
+2.	Eleanor Rigby  	매카트니	2:08<br>
+3.	I'm Only Sleeping  	레논	3:02<br>
+4.	Love You To (해리슨)	해리슨	3:01<br>
+5.	Here, There and Everywhere  	매카트니	2:26<br>
+6.	Yellow Submarine  	스타	2:40<br>
+7.	She Said She Said  	레논	2:37<br><br>
+사이드 2<br>
+1.	Good Day Sunshine  	매카트니	2:10<br>
+2.	And Your Bird Can Sing  	레논	2:02<br>
+3.	For No One  	매카트니	2:01<br>
+4.	Doctor Robert  	레논	2:15<br>
+5.	I Want to Tell You (해리슨)	해리슨	2:30<br>
+6.	Got to Get You into My Life  	매카트니	2:31<br>
+7.	Tomorrow Never Knows  	레논	2:57<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!--Sgt Pepper -->
+<div class="modal fade" id="8Sgt" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span> Sgt. Pepper Lonely Heart Club Band</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Sgt. Pepper's Lonely Hearts Club Band  	폴 매카트니	2:02 <br>
+2.	With a Little Help From My Friends  	링고 스타	2:44<br>
+3.	Lucy in the Sky with Diamonds  	존 레논	3:28<br>
+4.	Getting Better  	폴 매카트니	2:48<br>
+5.	Fixing a Hole  	매카트니	2:36<br>
+6.	She's Leaving Home  	폴 매카트니, 존 레논	3:35<br>
+7.	Being for the Benefit of Mr. Kite!  	존 레논	2:37<br><br>
+사이드 2<br>
+1.	Within You Without You  	조지 해리슨	5:04<br>
+2.	When I'm Sixty-Four  	폴 매카트니	2:37<br>
+3.	Lovely Rita  	폴 매카트니	2:42<br>
+4.	Good Morning Good Morning  	존 레논	2:41<br>
+5.	Sgt. Pepper's Lonely Hearts Club Band (Reprise)  	존 레논, 폴 매카트니, 조지 해리슨	1:19<br>
+6.	A Day in the Life  	존 레논, 폴 매카트니	5:39</p><br>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- Magical Mystery Tour -->
+<div class="modal fade" id="9Magical" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Magical Mystery Tour</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1: 영화 사운드트랙 <br>
+1.	Magical Mystery Tour  	폴 매카트니	2:48<br>
+2.	The Fool on the Hill  	폴 매카트니	3:00<br>
+3.	Flying (조지 해리슨/존 레논/폴 매카트니/링고 스타)	(기악곡)	2:16<br>
+4.	Blue Jay Way (조지 해리슨)	조지 해리슨	3:50<br>
+5.	Your Mother Should Know  	폴 매카트니	2:33<br>
+6.	I Am the Walrus  	존 레논	4:35<br><br>
+사이드 2: 1967년 싱글<br>
+1.	Hello, Goodbye  	폴 매카트니	3:24<br>
+2.	Strawberry Fields Forever  	존 레논	4:05<br>
+3.	Penny Lane  	폴 매카트니	3:00<br>
+4.	Baby, You're a Rich Man  	존 레논	3:07<br>
+5.	All You Need Is Love  	존 레논	3:57</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- White album -->
+<div class="modal fade" id="10White" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>The Beatles</h4>
+      </div>
+      <div class="modal-body">
+        <p>디스크 1<br>
+사이드 1<br>
+1.	Back in the U.S.S.R.  	매카트니	2:43<br>
+2.	Dear Prudence  	레논	3:56<br>
+3.	Glass Onion  	레논	2:17<br>
+4.	Ob-La-Di, Ob-La-Da  	매카트니	3:08<br>
+5.	Wild Honey Pie  	매카트니	0:52<br>
+6.	The Continuing Story of Bungalow Bill  	레논,오노 요코	3:13<br>
+7.	While My Guitar Gently Weeps (조지 해리슨)	해리슨	4:45<br>
+8.	Happiness Is a Warm Gun  	레논	2:43<br><br>
+사이드 2<br>
+1.	Martha My Dear  	매카트니	2:28<br>
+2.	I'm So Tired  	레논	2:03<br>
+3.	Blackbird  	매카트니	2:18<br>
+4.	Piggies (해리슨)	해리슨	2:04<br>
+5.	Rocky Raccoon  	매카트니	3:32<br>
+6.	Don't Pass Me By (링고 스타)	스타	3:50<br>
+7.	Why Don't We Do It in the Road?  	매카트니	1:40<br>
+8.	I Will  	매카트니	1:45<br>
+9.	Julia  	레논	2:54<br><br>
+디스크 2<br>
+사이드 3<br>
+1.	Birthday  	매카트니,레논	2:42<br>
+2.	Yer Blues  	레논	4:00<br>
+3.	Mother Nature's Son  	매카트니	2:47<br>
+4.	Everybody's Got Something to Hide Except Me and My Monkey  	레논	2:24<br>
+5.	Sexy Sadie  	레논	3:15<br>
+6.	Helter Skelter  	매카트니	4:29<br>
+7.	Long, Long, Long (해리슨)	해리슨	3:03<br><br>
+사이드 4<br>
+1.	Revolution 1  	레논	4:15<br>
+2.	Honey Pie  	매카트니	2:40<br>
+3.	Savoy Truffle (해리슨)	해리슨	2:54<br>
+4.	Cry Baby Cry  	레논,매카트니	3:02<br>
+5.	Revolution 9  	레논,해리슨,조지 마틴,오노 요코의 말소리	8:13<br>
+6.	Good Night  	스타	3:11<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Yellow Submarine -->
+<div class="modal fade" id="11Yellow" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Yellow Submarine</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Yellow Submarine  	스타	2:40<br>
+2.	Only a Northern Song (조지 해리슨)	해리슨	3:24<br>
+3.	All Together Now  	매카트니,레논	2:11<br>
+4.	Hey Bulldog  	레논,매카트니	3:11<br>
+5.	It's All Too Much (해리슨)	해리슨	6:25<br>
+6.	All You Need Is Love  	레논	3:51</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Abbey Road -->
+<div class="modal fade" id="12Abbey" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span>Abbey Road</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	〈Come Together〉  	레논	4:20 <br>
+2.	〈Something〉 (조지 해리슨)	해리슨	3:03<br>
+3.	〈Maxwell's Silver Hammer〉  	매카트니	3:27<br>
+4.	〈Oh! Daring〉  	매카트니	3:26<br>
+5.	〈Octopus's Garden〉 (링고 스타)	스타	2:51<br>
+6.	〈I Want You (She's So Heavy)〉  	레논	7:47<br><br>
+사이드 2<br>
+1.	〈Here Comes the Sun〉 (해리슨)	해리슨	3:05<br>
+2.	〈Because〉  	레논,매카트니,해리슨	2:45<br>
+3.	〈You Never Give Me Your Money〉  	매카트니	4:02<br>
+4.	〈Sun King〉  	레논,매카트니,해리슨	2:26<br>
+5.	〈Mean Mr. Mustard〉  	레논	1:06<br>
+6.	〈Polythene Pam〉  	레논	1:12<br>
+7.	〈She Came in Through the Bathroom Window〉  	매카트니	1:57<br>
+8.	〈Golden Slumbers〉  	매카트니	1:31<br>
+9.	〈Carry That Weight〉  	매카트니,레논,해리슨,스타	1:36<br>
+10.	〈The End〉  	매카트니	2:05<br>
+11.	〈Her Majesty〉  	매카트니	0:23<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!-- Let it be -->
+<div class="modal fade" id="13Let" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </span> Please Please Me</h4>
+      </div>
+      <div class="modal-body">
+        <p>사이드 1<br>
+1.	Two of Us  	매카트니,레논	3:37<br>
+2.	Dig a Pony  	레논	3:55<br>
+3.	Across the Universe  	레논	3:48<br>
+4.	I Me Mine (조지 해리슨)	해리슨	2:26<br>
+5.	Dig It (존 레논/폴 매카트니/조지 해리슨/링고스타)	레논	0:50<br>
+6.	Let It Be  	매카트니	4:03<br>
+7.	Maggie Mae (민요, 레논/매카트니/해리슨/스타 편곡)	레논,매카트니	0:40<br><br>
+사이드 2<br>
+1.	I've Got a Feeling  	매카트니,레논	3:38<br>
+2.	One After 909  	레논,매카트니	2:54<br>
+3.	The Long and Winding Road  	매카트니	3:38<br>
+4.	For You Blue (해리슨)	해리슨	2:32<br>
+5.	Get Back  	매카트니	3:09<br>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- 연락처 -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>If You Beatle Mania?? <br> Please Follow My Site!!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Deagu Univercity</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: 010-9503-####</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: cheol1201@naver.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <h3 class="text-center">From The Blog</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">만든이</a></li>
+    <li><a data-toggle="tab" href="#menu1">출처</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>C.G Lee (이철규)</h2>
+      <p>비틀즈를 좋아하는 젊은 대학생입니다.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>출처</h2>
+      <p>내용은 위키백과를 참조하였고 이미지는 구글이미지를 참조하였습니다.</p>
+      <p>https://ko.wikipedia.org/wiki/비틀즈 <비틀즈 : 위키백과></p>
+      <p>https://ko.wikipedia.org/wiki/존_레논 <존레논 : 위키백과></p>
+      <p>https://ko.wikipedia.org/wiki/폴_매카트니 <폴매카트니 : 위키백과></p>
+      <p>https://ko.wikipedia.org/wiki/조지_해리슨 <조지해리슨 : 위키백과</p>
+      <p>https://ko.wikipedia.org/wiki/링고_스타<링고스타 : 위키백과></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer ( 템플릿 제공 사이트 :https://www.w3schools.com )-->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>  <!-- 부드러운 효과를 위한 코드 -->
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
