@@ -1,6 +1,6 @@
 # Main Paage
 
-Click Here [Visit](https://lee-cg.github.io/TheBeatlesWeb/HTML5%20과제%20제이쿼리로%20사이트%20만들기%20theBeatles/HTML5%20과제%20제이쿼리로%20사이트%20만들기%20theBeatles/theBeatles.html)
+Click Here [Visit](https://lee-cg.github.io/TheBeatlesWeb/Main.html)
 
 ## Welcome to GitHub Pages
 
