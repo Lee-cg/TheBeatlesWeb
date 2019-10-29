@@ -1,4 +1,4 @@
-# Main Paage
+# Main Page
 
 Click Here [Visit](https://lee-cg.github.io/TheBeatlesWeb/Main.html)
 
